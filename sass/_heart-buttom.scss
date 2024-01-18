@@ -1,0 +1,20 @@
+.heart-button::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f004";
+    font-weight: 400;
+    font-size: 84px;
+    display: inline-block;
+    background: black;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+  .heart-button:active::before {
+    font-weight: 900;
+    background: linear-gradient(to bottom, $primary-color, $secondary-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
