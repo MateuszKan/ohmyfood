@@ -1,20 +1,26 @@
+.heart-checkbox {
+    position: absolute;
+    left: -9999px;
+}
+
 .heart-button::before {
     font-family: "Font Awesome 6 Free";
     content: "\f004";
     font-weight: 400;
-    font-size: 84px;
+    font-size: 30px;
     display: inline-block;
     background: black;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     -webkit-text-fill-color: transparent;
-  }
-  .heart-button:active::before {
+}
+
+.heart-checkbox:checked + .heart-button::before {
     font-weight: 900;
-    background: linear-gradient(to bottom, $primary-color, $secondary-color);
+    background: linear-gradient(to bottom, $colour-primary, $colour-secondary);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     -webkit-text-fill-color: transparent;
-  }
+}

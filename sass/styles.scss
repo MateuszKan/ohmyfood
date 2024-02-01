@@ -1,4 +1,16 @@
 @import '_variables';
+@import'_mixins';
 @import '_root';
 @import '_body';
-@import '_heart-buttom';
+@import '_heart__button';
+@import'./_menu__card';
+@import "./button__gradient.scss";
+@import './step__button';
+@import './food_card';
+@import "./loader";
+@import "./header";
+@import "./search__box";
+@import './section__expolore';
+@import './section__steps';
+@import './footer';
+@import "_animations"
