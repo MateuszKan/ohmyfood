@@ -566,7 +566,7 @@ header {
   list-style-type: none;
   padding: 0;
   list-style: none;
-  counter-reset: compteListe;
+  counter-reset: list;
   margin: 0 auto;
   max-width: 1543px;
 }
@@ -586,8 +586,8 @@ header {
   position: relative;
 }
 .step__stage::before {
-  counter-increment: compteListe 1;
-  content: counter(compteListe) " ";
+  counter-increment: list 1;
+  content: counter(list) " ";
   background: #9356DC;
   height: 24px;
   width: 24px;
@@ -602,7 +602,7 @@ header {
 .step__stage:hover {
   background: #f2eafb;
 }
-.step__stage:hover .tuto__icone {
+.step__stage:hover__icon {
   color: #9356DC;
 }
 @media screen and (min-width: 992px) {

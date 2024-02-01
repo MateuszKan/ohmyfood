@@ -11,7 +11,7 @@
         list-style-type: none;
         @include margin-padding(null, null, all, 0);
         list-style: none;
-        counter-reset: compteListe;
+        counter-reset: list;
         margin: 0 auto; 
         max-width: 1543px;
 
@@ -30,8 +30,8 @@
         position: relative;
 
         &::before {
-            counter-increment: compteListe 1;
-            content: counter(compteListe) " ";
+            counter-increment: list 1;
+            content: counter(list) " ";
             background: $colour-primary;
             height: 24px;
             width: 24px;
@@ -47,7 +47,7 @@
         &:hover {
             @include lightenhover ($colour-primary);
 
-            .tuto__icone {
+            &__icon {
                 color: $colour-primary;
             }
         }
