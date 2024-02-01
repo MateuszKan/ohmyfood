@@ -45,7 +45,7 @@
 @mixin borderradius($pixels...) {
     border-radius: $pixels
 }
-@mixin coeur{
+@mixin heart{
     border: none;
     background-color: transparent;
     cursor: pointer;
