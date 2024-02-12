@@ -1,11 +1,6 @@
 .step {
     @include margin-padding(null, null, all, 30px 15px);
 
-    &__title {
-        @include tablet-only {
-            text-align: center;
-        }
-    }
 
     &__list {
         list-style-type: none;
@@ -64,5 +59,8 @@
     &__icon {
         margin-right: 16px;
         color: #7e7e7e;
+    }
+    &__title{
+        @include margin-fix;
     }
 }

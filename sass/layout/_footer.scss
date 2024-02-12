@@ -3,14 +3,24 @@ footer {
         color: white;
         display: flex;
         flex-direction: column;
+
+        @include desktop-only{
+            align-items: end; 
+        justify-content: end;
+        flex: 1;
+        }
 }
 
 .footer {
     &__title {
+        font-size: 20px;
         @include margin-padding(all, 0, all, 0px);
         font-family: Shrikhand;
         font-weight: lighter;
-
+        @include desktop-only{
+    order: 2; 
+    margin-left: auto; 
+}
         @include tablet-only {
             text-align: center;
         }
@@ -22,6 +32,12 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 1em;
+
+        @include desktop-only{
+        flex-direction: row;
+        justify-content: space-between; 
+        align-items: center; 
+        }
 
         @include tablet-only {
             align-items: center;
@@ -38,26 +54,5 @@ footer {
             @include margin-padding(right, 15px, null, null);
             font-size: 12px;
         }
-    }
-}
-
-@media screen and (min-width: 768px) {
-    footer{
-    background: rgb(59, 59, 62);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: end; 
-    }
-    .footer__list {
-        flex-direction: row;
-        justify-content: space-between; 
-        align-items: center; 
-    }
-
-
-    .footer__title {
-        order: 2; 
-        margin-left: auto; 
     }
 }
