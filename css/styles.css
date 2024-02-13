@@ -32,11 +32,6 @@
     transform: rotate(360deg);
   }
 }
-@counter-style listetuto {
-  system: cyclic;
-  symbols: "1" "2" "3";
-  suffix: " ";
-}
 html {
   font-family: "Roboto";
 }
@@ -179,17 +174,15 @@ main {
   margin: 0;
 }
 
-.heart-checkbox {
+.heart__checkbox {
   position: absolute;
   left: -9999px;
 }
-
-.heart-button {
+.heart__button {
   z-index: 2;
   cursor: pointer;
 }
-
-.heart-button::before {
+.heart__button::before {
   font-family: "Font Awesome 6 Free";
   content: "\f004";
   font-weight: 400;
@@ -199,8 +192,7 @@ main {
   background-clip: text;
   color: transparent;
 }
-
-.heart-checkbox:checked + .heart-button::before {
+.heart__checkbox:checked + .heart__button::before {
   font-weight: 900;
   background: linear-gradient(to bottom, #9356DC, #FF79DA);
   background-clip: text;
@@ -305,11 +297,6 @@ footer {
     margin-left: auto;
   }
 }
-@media screen and (min-width: 768px) {
-  .footer__title {
-    text-align: center;
-  }
-}
 .footer__list {
   margin: 0;
   padding: 30px 20px 20px 15px;
@@ -322,11 +309,6 @@ footer {
   .footer__list {
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer__list {
     align-items: center;
   }
 }
@@ -383,8 +365,12 @@ header {
   border-radius: 50px 50px 0 0;
   background-color: #f5f5f5;
   position: relative;
-  max-width: 1542px;
-  margin: 0 auto;
+}
+@media screen and (min-width: 1542px) {
+  .menu {
+    margin: 0 auto 15px;
+    max-width: 1542px;
+  }
 }
 @media screen and (min-width: 992px) {
   .menu {
@@ -414,9 +400,6 @@ header {
   font-weight: 200;
   align-self: center;
   font-size: 30px;
-}
-.menu__header .fa-heart:hover {
-  animation: coeur 400ms both;
 }
 @media screen and (min-width: 992px) {
   .menu__header {
@@ -586,8 +569,12 @@ header {
   padding: 0;
   list-style: none;
   counter-reset: list;
-  margin: 0 auto;
-  max-width: 1543px;
+}
+@media screen and (min-width: 1542px) {
+  .step__list {
+    margin: 0 auto 15px;
+    max-width: 1542px;
+  }
 }
 @media screen and (min-width: 768px) {
   .step__list {

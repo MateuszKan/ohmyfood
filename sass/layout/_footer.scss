@@ -21,9 +21,6 @@ footer {
     order: 2; 
     margin-left: auto; 
 }
-        @include tablet-only {
-            text-align: center;
-        }
     }
 
     &__list {
@@ -39,9 +36,6 @@ footer {
         align-items: center; 
         }
 
-        @include tablet-only {
-            align-items: center;
-        }
     }
 
     &__items {

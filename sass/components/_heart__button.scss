@@ -1,13 +1,14 @@
-.heart-checkbox {
+.heart{
+&__checkbox {
     position: absolute;
     left: -9999px;
 }
-.heart-button{
+&__button{
 z-index: 2;
 cursor: pointer;
 }
 
-.heart-button::before {
+&__button::before {
     font-family: "Font Awesome 6 Free";
     content: "\f004";
     font-weight: 400;
@@ -19,9 +20,10 @@ cursor: pointer;
 
 }
 
-.heart-checkbox:checked + .heart-button::before {
+&__checkbox:checked + &__button::before {
     font-weight: 900;
     background: linear-gradient(to bottom, $colour-primary, $colour-secondary);
     background-clip: text;
     color: transparent;
+}
 }

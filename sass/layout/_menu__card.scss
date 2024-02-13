@@ -3,8 +3,7 @@
     @include borderradius(50px 50px 0 0);
     background-color: $light-grey;
     position: relative;
-    max-width: 1542px;
-    margin: 0 auto;
+ @include margin-fix;
 
     @include desktop-only {
         display: flex;
