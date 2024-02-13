@@ -595,6 +595,9 @@ header {
     justify-content: space-evenly;
   }
 }
+.step__icon {
+  color: #9356DC;
+}
 .step__stage {
   margin: 15px 0 15px 12px;
   padding: 24px;
@@ -620,9 +623,6 @@ header {
 }
 .step__stage:hover {
   background: #f2eafb;
-}
-.step__stage:hover__icon {
-  color: #9356DC;
 }
 @media screen and (min-width: 992px) {
   .step__stage {
