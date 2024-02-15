@@ -101,19 +101,19 @@
         }
 
         &:nth-child(2) {
-            @include delay(2 * $delaydebut);
+            @include delay(2 * $delaymenu);
         }
 
         &:nth-child(3) {
-            @include delay(3 * $delaydebut);
+            @include delay(3 * $delaymenu);
         }
 
         &:nth-child(4) {
-            @include delay(4 * $delaydebut);
+            @include delay(4 * $delaymenu);
         }
 
         &:nth-child(5) {
-            @include delay(5 * $delaydebut);
+            @include delay(5 * $delaymenu);
         }
 
         &__price {
@@ -163,7 +163,7 @@
             }
 
             & .menu__info {
-                max-width: 80%;
+                max-width: 100%;
                 white-space: nowrap;
                 text-overflow: ellipsis;
                 overflow: hidden;

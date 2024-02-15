@@ -1,4 +1,4 @@
-.step {
+    .step {
     @include margin-padding(null, null, all, 30px 15px);
 
 
@@ -49,10 +49,6 @@
         @include desktop-only {
             width: 25%;
         }
-    }
-
-    &__lien {
-        text-decoration: none;
     }
 
     &__icon {

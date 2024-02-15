@@ -52,7 +52,7 @@ body {
 }
 
 main {
-  flex: 1 0 auto;
+  flex: 1 0;
 }
 
 .buttongradient {
@@ -90,11 +90,6 @@ main {
   .restaurants__list {
     flex-flow: row wrap;
     justify-content: space-between;
-  }
-}
-@media screen and (min-width: 992px) {
-  .restaurants__list {
-    flex-flow: row nowrap;
   }
 }
 .restaurants__form {
@@ -520,7 +515,7 @@ header {
   margin-right: 0px;
 }
 .menu__card:hover .menu__info {
-  max-width: 80%;
+  max-width: 100%;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -615,9 +610,6 @@ header {
   .step__stage {
     width: 25%;
   }
-}
-.step__lien {
-  text-decoration: none;
 }
 .step__icon {
   margin-right: 16px;
