@@ -3,6 +3,8 @@ footer {
         color: white;
         display: flex;
         flex-direction: column;
+        flex:1;
+        justify-content: end;
 
         @include desktop-only{
             align-items: end; 
