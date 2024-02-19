@@ -16,10 +16,12 @@
 
         
         @include tablet-only {
-            flex-flow: row nowrap;
-            justify-content: space-between;
+            flex-flow: row wrap;
+            justify-content: center;
         }
-
+@include desktop-only{
+    flex-flow:row nowrap;
+}
 
     }
 

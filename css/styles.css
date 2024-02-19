@@ -88,8 +88,13 @@ main {
 }
 @media screen and (min-width: 768px) {
   .restaurants__list {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 992px) {
+  .restaurants__list {
     flex-flow: row nowrap;
-    justify-content: space-between;
   }
 }
 .restaurants__form {
@@ -351,8 +356,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: fadeOut 1s ease-out forwards;
-  animation-delay: 2s;
+  animation: fadeOut 1s ease-out 2s forwards;
   z-index: 1000;
 }
 
@@ -507,7 +511,7 @@ header {
   font-family: FontAwesome;
 }
 .menu__card:hover .menu__card__icon {
-  animation: rotateicon 0.5s 1 0.2s forwards;
+  animation: spin 0.5s 1 0.2s forwards;
 }
 .menu__card:hover .menu__card__validation {
   margin-right: 0px;

@@ -156,7 +156,7 @@
 
         &:hover {
             & .menu__card__icon {
-                animation: rotateicon 0.5s 1 0.2s forwards;
+                animation: spin 0.5s 1 0.2s forwards;
             }
 
             & .menu__card__validation {
